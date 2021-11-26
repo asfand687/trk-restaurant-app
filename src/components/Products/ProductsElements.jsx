@@ -1,30 +1,38 @@
 import styled from 'styled-components'
 
 export const ProductsContainer = styled.div`
-	width: 100vw,
 	min-height: 100vh;
+	width: 100%;
 	background: #150f0f;
 	color: #fff;
 `
 
 export const ProductWrapper = styled.div`
+	max-width: 80%;
+	margin: 0 auto;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 	margin: 0 auto;
+
+	@media screen and (max-width: 660px) {
+		flex-direction: column;
+		align-items: center;
+	}
 `
 
 export const ProductCard = styled.div`
-	margin: 0 2rem;
 	line-height: 2;
-	width: 300px;
+	width: 100%;
+
+	@media screen and (min-width: 1000px) {
+		margin: 0 2rem;
+	}
 `
 
 export const ProductImg = styled.img`
 	height: 300px;
-	min-width: 300px;
-	max-width: 100%:
-	box-shadow: 8px 8px #fdc500;
+	width: 100%;
+	object-fit: cover;
 `
 
 export const ProductHeading = styled.h1`

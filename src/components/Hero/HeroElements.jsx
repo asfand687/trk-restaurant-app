@@ -39,16 +39,18 @@ export const HeroItems = styled.article`
 `
 
 export const HeroH1 = styled.h2`
-	// font-size: clamp(2.5rem, 10vw, 5rem);
-	font-size: 5rem;
+	font-size: clamp(2.5rem, 10vw, 5rem);
 	margin-bottom: 1rem;
 	box-shadow: 3px 5px #e9ba23;
 `
 
 export const HeroP = styled.p`
-	// font-size: clamp(2rem, 2.5vw, 3rem);
-	font-size: 3rem;
+	font-size: clamp(2rem, 2.5vw, 3rem);
 	margin-bottom: 2rem;
+
+	@media screen and (max-width: 660px) {
+		font-size: 2rem;
+	}
 `
 
 export const HeroBtn = styled.button`
@@ -64,5 +66,10 @@ export const HeroBtn = styled.button`
 		transition: 0.2s ease-out;
 		cursor: pointer;
 		color: #000;
+	}
+
+	@media screen and (max-width: 660px) {
+		font-size: 1.4rem;
+		padding: 1rem 2rem;
 	}
 `
